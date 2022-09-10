@@ -11,3 +11,16 @@ randomPhraseButton.addEventListener(`click`, function clickInputEventHandler() {
     let randomPhrase = randomPhraseArray[randomNumber]
     translateInput.value += `${randomPhrase}`
 })
+
+// Wiring Button Click and Output
+// When the user clicks button -> "Translate to Minion Speak", We use Minion Fun Translation API to translate the input and display the output
+let translateButton = document.querySelector(`#translate-button`)
+let translateOutput = document.querySelector(`#translate-output`)
+translateButton.addEventListener(`click`, clickOutputEventHandler())
+
+// Display the output
+function clickOutputEventHandler() {
+    console.log(`Translate to Minion Speak - Button Clicked. Input Value - ${translateInput.value}`)
+    translateOutput.innerHTML = `${translateInput.value}`
+}
+
