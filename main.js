@@ -24,7 +24,12 @@ translateButton.addEventListener(`click`, clickOutputEventHandler())
 // Display the output
 function clickOutputEventHandler() {
     console.log(`Translate to Minion Speak - Button Clicked. Input Value - ${translateInput.value}`)
-    translateOutput.innerHTML = `${translateInput.value}`
+    let inputValue = translateInput.value
+    let finalURL = constructURL(inputValue)
+    console.log(finalURL)
+    fetch(finalURL).then(response => response.json()).then(json => {
+        translateOutput.innerText = json.contents.translated
+    }).catch(() => alert(`An error occured:/ Try again after some time.`))
 }
 
 // Constructing URL
