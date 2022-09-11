@@ -43,12 +43,12 @@ h2{
 
 a{
     text-decoration: none;
-    color: var(--offwhite-color);
+    color: var(--offblack-color);
     transition: all ease-in-out 0.25s;
 }
 
 a:hover{
-    color: var(--primary-color);
+    transform: translateY(-0.5rem);
 }
 
 .primary-button, .secondary-button{
@@ -105,7 +105,7 @@ header{
 
 /* main section */
 main{
-    min-height: 80vh;
+    min-height: 85vh;
     background-color: var(--background-color);
     color: var(--offblack-color);
     display: flex;
@@ -149,87 +149,11 @@ textarea::placeholder{
 
 /* footer section */
 footer{
-    min-height: 10vh;
+    min-height: 5vh;
     margin: auto;
     text-align: center;
     padding: 1rem 0rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-top: 0.5rem solid var(--primary-color);
-    background-color: var(--offblack-color);
-}
-
-footer ul{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.social-icons{
-    padding: 0rem 1rem;
-    min-height: 4rem;
-    min-width: auto;
-}
-
-.github-icon{
-    mask: url(./icons/github_icon.svg) no-repeat;
-    display: block;
-    width: 4rem;
-    height: 4rem;
-    background: var(--primary-color);
-    mask-size: contain;
-    transition: all ease-in-out 0.25s;
-}
-
-.linkedin-icon{
-    mask: url(./icons/linkedin_icon.svg) no-repeat;
-    display: block;
-    width: 4rem;
-    height: 4rem;
-    background: var(--primary-color);
-    mask-size: contain;
-    transition: all ease-in-out 0.25s;
-}
-
-.mail-icon{
-    mask: url(./icons/gmail_icon.svg) no-repeat;
-    display: block;
-    width: 4rem;
-    height: 4rem;
-    background: var(--primary-color);
-    mask-size: contain;
-    transition: all ease-in-out 0.25s;
-}
-
-.instagram-icon{
-    mask: url(./icons/instagram_icon.svg) no-repeat;
-    display: block;
-    width: 4rem;
-    height: 4rem;
-    background: var(--primary-color);
-    mask-size: contain;
-    transition: all ease-in-out 0.25s;
-}
-
-.twitter-icon{
-    mask: url(./icons/twitter_icon.svg) no-repeat;
-    display: block;
-    width: 4rem;
-    height: 4rem;
-    background: var(--primary-color);
-    mask-size: contain;
-    transition: all ease-in-out 0.25s;
-}
-
-.github-icon:hover, .linkedin-icon:hover, .mail-icon:hover,.instagram-icon:hover, .twitter-icon:hover{
-    background: var(--offwhite-color);
-}
-
-footer small{
-    padding-top: 1rem;
+    color: var(--offblack-color);
 }
 
 /* mobile devices */
